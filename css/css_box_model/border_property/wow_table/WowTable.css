@@ -1,0 +1,30 @@
+@font-face {
+    font-family: ProductSans;
+    src: url(./../../../assets/fonts/ProductSansBold.ttf);
+}
+body{
+    font-size: 100px;
+    text-align: center;
+    font-family: ProductSans;
+}
+#wowtable{
+    border-collapse: collapse;
+}
+.wowtable_cells{
+    border: 5px solid black;
+}
+.empty_cells{
+    border: none;
+}
+.bottom{
+    border-bottom: none;
+}
+.left{
+    border-left: none;
+}
+.top{
+    border-top: none;
+}
+.right{
+    border-right: none;
+}

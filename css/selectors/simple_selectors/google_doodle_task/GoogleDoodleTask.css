@@ -1,0 +1,33 @@
+@font-face{
+    font-family: ProductSans;
+    src: url(../../../../assets/fonts/Product\ Sans\ Bold.ttf);
+}
+#dummy_devison{
+    height: 50px;
+}
+#google_doodle_container{
+    width: fit-content;
+    height: 150px;
+}
+.google_doodles{
+    font-size: 120PX;
+    font-family: ProductSans;
+    float: left;
+}
+.textcolor_royalblue{
+    color: royalblue;
+}
+.textcolor_red{
+    color: red;
+}
+.textcolor_orange{
+    color: orange;
+}
+#text_green{
+    color: green;
+}
+.google_doodles_marguees{
+    height: 400px;
+}
+
+

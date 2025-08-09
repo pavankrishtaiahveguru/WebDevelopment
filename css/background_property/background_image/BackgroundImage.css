@@ -1,0 +1,23 @@
+.color_gradient_containers{
+    width: 200px;
+    height: 200px;
+}
+#linear_gradient_container{
+    background-image:linear-gradient(to bottom right,orange 40%,white,green);
+}
+#radial_gradient_container{
+    background-image: radial-gradient( circle at bottom left, violet,indigo,blue,green,yellow,orange,red);
+}
+#conic_gradient_container{
+    background-image: conic-gradient(violet,indigo,blue,green,yellow,orange,red);
+}
+
+#basketball_image_container{
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    background-image: url(../../../assets/images/BasketBallImage.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

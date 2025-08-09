@@ -1,0 +1,39 @@
+#capsule_body_container{
+    width: 400px;
+    height: 200px;
+}
+.capsule_containers{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#black_color{
+    background-color: black;
+    border-radius: 48% 0 0 48%;
+}
+#gray_color{
+    background-color: gray;
+    border-radius: 0 48% 48% 0;
+}
+
+/* second capsule */
+#capsule_container{
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient( to right,black 50%,gray 50%);
+    border-radius: 100px;
+}
+/*  third capsule */
+#third_capsule_body_container{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 100px;
+}
+#third_capsule_container{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    float: left;
+    border-radius: 100px 0 0 100px;
+}

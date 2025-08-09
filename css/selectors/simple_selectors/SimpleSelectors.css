@@ -1,0 +1,101 @@
+/* universal selector (*) */
+/* 
+*{
+font-size:50px;
+color:red;
+ */
+/* element selector (tagname) */
+
+/* h1{
+    font-size: 50px;
+    color: red;
+}
+p{
+    font-size: 30px;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+} */
+
+
+
+/* id selector */
+h1{
+    font-size: 50px;
+}
+#sql_heading{
+    color: red;
+}
+#web_development_heading{
+    color: royalblue;
+}
+#corejava_heading{
+    color: orange;
+    background-color: black;
+    width: fit-content;
+}
+
+p{
+    font-size: 30px;
+}
+button{
+    font-size: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+#subscribe_button{
+    background-color: red;
+    border-radius: 30px;
+}
+#follow_button{
+    background-color: royalblue;
+    border-radius: 15px;
+}
+form{
+    outline: none;
+}
+input{
+    outline: none;
+    font-size: 20px;
+}
+#user_name_inputbox{
+    border: 2px solid red;
+}
+#password_inputbox{
+    border: 2px solid royalblue;
+}
+
+*{
+    font-size: 50px;
+}
+.text_darkblue{
+    color: darkblue;
+}
+.fontsize_75px{
+    font-size: 75px;
+}
+.background_lightblue{
+    background-color: lightblue;
+}
+.border_darkblue{
+    border: 10px solid darkblue;
+}
+
+/* group selector */
+#songs_details_table_head_first_row{
+    color: orange;
+    background-color: black;
+}
+#songs_details_table_body{
+    text-align: center;
+}
+#songs_details_table_body_first_row,#songs_details_table_body_third_row{
+    background-color: lightgray;
+}
+#songs_details_table_body_second_row,#songs_details_table_body_fourth_row{
+    background-color: rgb(240, 240, 240);
+}

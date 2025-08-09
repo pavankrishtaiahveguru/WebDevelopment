@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+.headings{
+    font-size: 50px;
+    text-align: center;
+    color: greenyellow;
+    background-color: gray;
+}
+#web_development_heading{
+    font-family: 'Courier New', Courier, monospace;
+}
+#core_java_heading{
+    font-family: Dynapuff;
+}
+#merry_christmas_heading{
+    font-family: Mountains of Christmas;
+}
+@font-face{
+    font-family: NeueMachina;
+    src: url(../../assets/fonts/NeueMachinaRegular.otf);
+}
+#machine_learning_heading{
+    font-family: NeueMachina;
+}

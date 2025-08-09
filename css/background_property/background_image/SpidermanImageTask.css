@@ -1,0 +1,9 @@
+div{
+    width: 400px;
+    height: 400px;
+}
+#spiderman_container{
+    background-image: linear-gradient( to bottom right ,darkblue ,transparent 50%, darkblue),radial-gradient(transparent 20%,red),url(../../../assets/images/SpiderMan.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

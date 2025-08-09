@@ -1,0 +1,61 @@
+*{
+    font-family: ProductScans;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+.course_heading{
+    font-size: 50px;
+    width: fit-content;
+    border: 30px inset gray;
+    background-color: greenyellow;
+    /* margin specific properties */
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    /* margin shorthand property */
+    /* one value */
+    margin: 10px;
+    /* two value */
+    margin: 10px 30px;
+    /* four value */
+    margin: 10px 20px 30px 40px;
+
+    /* specific padding properties */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* short hand property */
+    /* one value */
+    padding: 10px;
+    /* two value */
+    padding: 10px 30px;
+    /* four value */
+    padding: 10px 20px 30px 40px;
+
+}
+
+
+.pay_buttons{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 0.25%;
+}
+
+#earth_image{
+width: 200px;
+border: 30px groove gray;
+margin: 10px 10px 10px;
+padding: 1%;
+}

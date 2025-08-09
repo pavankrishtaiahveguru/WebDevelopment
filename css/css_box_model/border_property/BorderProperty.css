@@ -1,0 +1,66 @@
+.border_containter{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    float: left;
+    border-width: 30px;
+    border-color: grey;
+}
+
+#solid_border_container{
+    border-style: solid;
+}
+#dashed_border_container{
+    border-style: dashed;
+}
+#dotted_border_container{
+    border-style: dotted;
+}
+#double_border_container{
+    border-style: double;
+}
+#inset_border_container{
+    border-style: inset;
+}
+#outset_border_container{
+    border-style: outset;
+}
+
+#groove_border_container{
+    border-style: groove;
+}
+#ridge_border_container{
+    border-style: ridge;    
+}
+
+#border_shorthand_property_container{
+    /* border specific property */
+    border-width: 30px;
+    border-style: solid;
+    border-color: grey;
+    /* border shorthand property */
+    border: 30px solid grey;
+}
+
+#mixed_border_container{
+    /* specific side specific border property */
+    border-top-width: 30px;
+    border-top-style: solid;
+    border-top-color: darkblue;
+    border-right-width: 30px;
+    border-right-style: dashed;
+    border-right-color: orange;
+    border-bottom-width: 30px;
+    border-bottom-style: double;
+    border-bottom-color: darkblue;
+    border-left-width: 30px;
+    border-left-style: dotted;
+    border-left-color: orange;
+    border-color: transparent;
+    /* specific side shorthand border property */
+    border-top: 30px solid darkblue;
+    border-right: 30px dashed orange;
+    border-bottom: 30px double darkblue;
+    border-left: 30px dotted orange;
+
+}

@@ -1,0 +1,46 @@
+.border_radius_container{
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    border: 15px solid navy;
+    float: left;
+}
+#circular_border_radius_container{
+    /* one value */
+    border-radius: 10%;
+    /* two value */
+    border-radius: 10% 30%;
+    /* four value */
+    border-radius: 10% 20% 30% 40%;
+}
+#elliptical_border_radius_container{
+    /* one value */
+    /* border-radius: x-axis_radius_value/y-axis_radius_value; */
+    border-radius: 10%/50%;
+    /* two value */
+    /* border-radius: x1 x2/y1 y2; */
+    border-radius: 10% 50/50% 10%;
+    /* four value */
+    /* border-radius: x1,x2 x3 x4/y1 y2 y3 y4; */
+    border-radius: 10% 20% 30% 40%/40% 305 30% 205 10%;
+
+}
+#square_border_container{
+    border-radius: 50%;
+}
+#rectangle_ellipse_container{
+    width: 300px;
+    height: 150px;
+    background-color: blueviolet;
+    border: 3px solid gray;
+    float: left;
+    border-radius: 150px/80px;
+}
+#water_droplet{
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-image: linear-gradient(lightblue,blue);
+    /* to generate fancy border radius --> 9elements.github  */
+    border-radius: 100% 0% 59% 41%/55% 0% 100% 45%;
+}

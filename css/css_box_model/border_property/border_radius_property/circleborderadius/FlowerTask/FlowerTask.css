@@ -1,0 +1,25 @@
+#flower_body{
+    height: 800px;
+    width: 800px;
+}
+.flower_petals{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+#red_petals{
+    background-color: red;
+    border-radius: 0 60% 5% 60%;
+}
+#green_petals{
+    background-color: green;
+    border-radius: 60%  0 60% 5%;
+}
+#darkblue_petals{
+    background-color: darkblue;
+    border-radius: 60% 5% 60% 0;
+}
+#orange_petals{
+    background-color: orange;
+    border-radius: 5% 60% 0 60%;
+}
