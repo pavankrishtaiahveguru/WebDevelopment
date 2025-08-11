@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+#earth_fieldset{
+    width: 350px;
+    height: 350px;
+    margin: 120px auto;
+    border: 3px solid darkblue;
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+#earth_fieldset:hover{
+    background-size: 50%;
+    background-position: 3%;
+    border: 30px groove gray;
+}
+#earth_fieldset:hover>#earth_legend{
+    border: 5px solid black;
+    margin-left: 53%;
+}
+#earth_legend{
+    font-size: 30px;
+    margin-left: 7.5%;
+    color: darkblue;
+}
+#earth_fieldset:hover>#earth_heading,#earth_fieldset:hover>#earth_paragraph{
+    margin-left: 53%;
+}
+#earth_fieldset:hover>#earth_heading{
+    font-size: 35px;
+    width: fit-content;
+    color: darkblue;
+    background-color: lightgrey;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#earth_fieldset:hover>#earth_paragraph{
+    color: darkblue;
+    font-size: 20px;
+}
+#earth_heading,#earth_paragraph{
+    color: transparent;
+}
