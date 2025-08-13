@@ -1,0 +1,23 @@
+/* 
+selector:pseudo-classes{
+    property:value;
+} 
+*/
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+
+.ocean_hyperlinks{
+    font-size: 30px;
+    font-family: ProductScans;
+}
+
+.ocean_hyperlinks:link{
+    color: orange;
+}
+
+.ocean_hyperlinks:visited{
+    color: red;
+}
