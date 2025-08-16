@@ -60,15 +60,19 @@
 #fullstack_list,#fullstack_list_items,#snacks_list{
     font-size: 30px;
 }
+#fullstack_list{
+    list-style-type: upper-roman;
+}
 #fullstack_list::marker{
-    list-style: upper-roman;
     color: red;
 }
-.java_fullstack_list_items::marker{
+
+.java_fullstack_list_items{
     list-style-type: upper-alpha;
+}
+.java_fullstack_list_items::marker{
     color: darkblue;
 }
-
 #popcorn_snacks_item::marker{
     content: "🍿";
 }
