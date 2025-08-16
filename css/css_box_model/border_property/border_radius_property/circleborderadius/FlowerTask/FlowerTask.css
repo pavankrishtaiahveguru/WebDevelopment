@@ -7,18 +7,22 @@
     height: 50%;
     float: left;
 }
+/* first petal */
 #red_petals{
     background-color: red;
     border-radius: 0 60% 5% 60%;
 }
+/* second petal */
 #green_petals{
     background-color: green;
     border-radius: 60%  0 60% 5%;
 }
+/* third petal */
 #darkblue_petals{
     background-color: darkblue;
     border-radius: 60% 5% 60% 0;
 }
+/* fourth petal */
 #orange_petals{
     background-color: orange;
     border-radius: 5% 60% 0 60%;

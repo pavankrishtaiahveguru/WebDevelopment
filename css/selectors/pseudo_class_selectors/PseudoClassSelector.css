@@ -21,3 +21,59 @@ selector:pseudo-classes{
 .ocean_hyperlinks:visited{
     color: red;
 }
+
+#blocks_containers{
+    width: fit-content;
+    height: 100px;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    border-bottom: 10px solid black;
+    cursor: pointer;
+}
+.blocks{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    float: left;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+#blocks_containers:hover>.blocks:first-child,#blocks_containers:hover>.blocks:last-child{
+    background-color: darkblue;
+}
+#blocks_containers:hover>.blocks:nth-child(2),#blocks_containers:hover>.blocks:nth-last-child(2){
+    background-color: red;
+}
+
+.input_boxes{
+    font-size: 30px;
+    outline: none;
+}
+
+.input_boxes:required{
+    border: 3px solid red;
+}
+
+.input_boxes:read-only{
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.input_buttons{
+    outline: none;
+    border: none;
+    font-size: 30px;
+    margin: 10px 0px;
+    background-color: lightgray;
+    border-radius: 30px;
+}
+
+.input_buttons:disabled{
+    border: 3px solid black;
+}
+
+.input_boxes:focus{
+    border: none;
+    border-bottom: 3px solid red;
+}

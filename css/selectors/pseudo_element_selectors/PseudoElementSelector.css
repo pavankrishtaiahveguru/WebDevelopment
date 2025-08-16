@@ -1,0 +1,88 @@
+*{
+    margin: none;
+    outline: none;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+
+.input_boxes{
+    font-size: 30px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid darkblue;
+    color: darkblue;
+}
+.input_boxes::placeholder{
+    color: darkblue;
+}
+
+.course_heading{
+    font-size: 50px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+#sql_heading:hover::after{
+    color: red;
+    content: "Language";
+}
+
+#web_development_heading:hover::before{
+    color: red;
+    content: "Web";
+}
+
+#web_development_paragraph{
+    font-size: 30px;
+}
+
+#web_development_paragraph::first-letter{
+    font-size: 50px;
+    color: red;
+}
+
+#web_development_paragraph::first-line{
+    color: darkblue;
+}
+
+#web_development_paragraph::selection,#web_development_heading::selection{
+    color: greenyellow;
+    background-color: gray;
+}
+
+#fullstack_list_heading,#snacks_list_heading{
+    font-size: 50px;
+}
+#fullstack_list,#fullstack_list_items,#snacks_list{
+    font-size: 30px;
+}
+#fullstack_list::marker{
+    list-style: upper-roman;
+    color: red;
+}
+.java_fullstack_list_items::marker{
+    list-style-type: upper-alpha;
+    color: darkblue;
+}
+
+#popcorn_snacks_item::marker{
+    content: "🍿";
+}
+#pizza_snacks_item::marker{
+    content: "🍕";
+}
+#burger_snacks_item::marker{
+    content: "🍔";
+}
+#french_fries_snacks_item::marker{
+    content: "🍟";
+}
+#beer_mug_snacks_item::marker{
+    content: "🍻";
+}
+
+
