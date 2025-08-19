@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.images{
+    width: 350px;
+    transition: margin-left 5000ms;
+}
+
+#image_container{
+    border-bottom: 30px solid black;
+    cursor: pointer;
+}
+
+#image_container:hover>.images{
+    margin-left: 84%;
+}
+
+#cycle_image{
+    transition-timing-function: ease;
+}
+
+#bike_image{
+    transition-timing-function: ease-in;
+    transition-delay: 5000ms;
+}
+
+#car_image{
+    transition-timing-function: ease-in-out;
+    transition-delay: 10000ms;
+}
+
+#lorry_image{
+    transition-timing-function: ease-out;
+    transition-delay: 15000ms;
+}
+
+#jcb_image{
+    transition-timing-function: linear;
+    transition-delay: 20000ms;
+}

@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+#transition_container {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    border: 25px solid gray;
+    cursor: pointer;
+    
+    /* by using selected css property for make transition */
+    /* transition-property: width,height,border,border-radius;
+    transition-duration: 3s ,3s,5s,10s; */
+
+    /* shorthand property */
+    /* /* transition: width 3s, height 3s, border 5s,border-radius 10s; */
+
+    /* for all the elements to select by using shorthand property */
+    transition: all 500ms; 
+}
+
+
+
+#transition_container:hover {
+    width: 300px;
+    height: 300px;
+    border: 75px solid gray;
+    border-radius: 50%;
+    
+} 
