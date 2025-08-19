@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#color_blocks_container{
+    width: 450px;
+    height: 150px;
+    margin: 250px auto;
+    padding-bottom: 10px;
+    border-bottom: 30px solid black;
+    cursor: pointer;
+}
+
+.color_blocks{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+}
+
+#red_block{
+    background-color: red;
+}
+#darkblue_block{
+    background-color: darkblue;
+}
+#gray_block{
+    background-color: gray;
+}
+
+#color_blocks_container:hover>.color_blocks{
+    transition: transform 1500ms;
+}
+
+/* rotate functions */
+#color_blocks_container:hover>#red_block{
+    /* transform:rotateX(angle) */
+    transform: rotateX(360deg);
+}
+#color_blocks_container:hover>#darkblue_block{
+    /* transform:rotateY(angle) */
+    transform: rotateY(360deg);
+}
+#color_blocks_container:hover>#gray_block{
+    /* transform:rotateZ(angle) */
+    transform: rotateZ(360deg);
+    /* transform:rotate(angle) */
+    transform: (360deg);
+}
+/* skew functions */
+#color_blocks_container:hover>#red_block{
+    /* transform:skewX(angle) */
+    transform: skewX(360deg);
+}
+#color_blocks_container:hover>#darkblue_block{
+    /* transform:skewY(angle) */
+    transform: skewY(360deg);
+}
+#color_blocks_container:hover>#gray_block{
+    /* transform:(X-axis_angle,Y-axis_angle) */
+    transform: skew(360deg,360deg);
+}
+
+
+/* scale functions */
+#color_blocks_container:hover>#red_block{
+    /* transform:scaleX(scaling_factor) */
+    transform: scaleX(1.5);
+}
+#color_blocks_container:hover>#darkblue_block{
+    /* transform:scaleY(scaling_factor) */
+    transform: scaleY(1.5);
+}
+#color_blocks_container:hover>#gray_block{
+    /* transform:scale(x-axis_scaling_factor,y-axis_scaling_factor) */
+    transform: (2);
+}
+
+/* translate functions */
+#color_blocks_container:hover>#red_block{
+    /* transform:translateX(scaling_factor) */
+    transform: translateX(-50);
+}
+#color_blocks_container:hover>#darkblue_block{
+    /* transform:translateY(scaling_factor) */
+    transform: translateY(-50);
+}
+#color_blocks_container:hover>#gray_block{
+    /* transform:translate(x-axis_co-ordinate_value,y-axis_scaling_factor) */
+    transform: translate(50px,0px);
+}

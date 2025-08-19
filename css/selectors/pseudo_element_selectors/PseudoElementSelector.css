@@ -89,6 +89,30 @@
     content: "🍻";
 }
 
+/* space scrollbar */
+/* body::-webkit-scrollbar{
+    width: 50px;
+    background-image: url(../../../assets/images/SpaceStars.png);
+    background-size: 25%;
+}
+body::-webkit-scrollbar-thumb{
+    background-image: url(../../../assets/images/Rocket.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar-button{
+    height: 50px;
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 100%;
+}
+
+body::-webkit-scrollbar-button:active{
+    background-image: url(../../../assets/images/Sun.PNG);
+    background-size: 120%;
+    background-position: center;
+} */
+
 /* professional scrollbar */
 body::-webkit-scrollbar{
     width: 15px;
@@ -111,14 +135,14 @@ body::-webkit-scrollbar-button:active{
 }
 
 body::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(70,70,70);
+    background-color: rgb(60,60,60);
 }
 
 /* Slider */
 
 #slider_input_field{
     width: 15%;
-    -webkit-appearance:none;
+    -webkit-appearance: none;
 }
 
 #slider_input_field::-webkit-slider-runnable-track{

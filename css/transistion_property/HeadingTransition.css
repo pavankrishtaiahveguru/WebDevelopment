@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+#web_development_heading{
+    width: fit-content;
+    font-size: 150px;
+    font-family: ProductScans;
+    background-image: linear-gradient(to right, violet,indigo,blue,green,yellow,orange,red);
+    background-size: 2000%;
+    margin: 250px auto;
+    background-clip: text;
+    color: transparent;
+}
+
+#web_development_heading:hover{
+    background-position: right;
+    /* transition shorthand property */
+    /* transition:property duration timing-function delay */
+    transition: background-position 1500ms linear 100ms;
+}
