@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#indian_flag_container{
+    height: 450px;
+    width: 80%;
+    margin: 150px auto;
+    cursor: pointer;
+}
+.containers{
+    width: 100%;
+    height: 33.3%;
+    border-radius: 100px;
+}
+
+#orange_container{
+    background-color: orange;
+}
+
+#white_container{
+    background-color: white;
+}
+
+#green_container{
+    background-color: green;
+}
+
+#ashoka_chakra_image_container{
+
+    width: 150px;
+    height: 150px;
+    background-image: url(../../../assets/images/AshokaChakra.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+
+#indian_flag_container:hover #ashoka_chakra_image_container{
+    transform: rotate(3600deg);
+    transition: transform 500000ms linear;
+}
+

@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansBold.ttf);
+}
+
+body{
+    background-color: black;
+}
+#glowing_button{
+    font-size: 150px;
+    padding: 20px;
+    margin: 260px 0px 0px 15%;
+    background-color: greenyellow;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 600ms;
+}
+
+#glowing_button:hover{
+
+    background-position: center;
+    background-size: 300px 300px;
+    /*  we can pass multiple box shadows  */
+    box-shadow: 0px 0px 100px greenyellow,
+                0px 0px 300px greenyellow,
+                0px 0px 700px greenyellow,
+                0px 0px 900px greenyellow;
+}
+
