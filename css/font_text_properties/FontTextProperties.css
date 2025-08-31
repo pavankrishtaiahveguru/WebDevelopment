@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+#web_development_heading{
+    font-size: 100px;
+    text-align: center;
+}
+
+#web_development_paragraph{
+    font-size: 30px;
+    text-align: justify;
+}

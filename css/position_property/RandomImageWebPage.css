@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+#navbar_container{
+    height: 825px;
+}
+
+.nav_bars{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 3%;
+    background-color: lightgray;
+    height: 50px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    
+}
+.nav_bars_image_containers{
+    height: 780px;
+}
+#mount_himalayas_image{
+    background-image: url(../../assets/images/MountHimalayas.jpg);
+    background-size: 100% 100%;
+}
+
+#rainbow_image{
+    background-image: url(../../assets/images/Rainbow.JPG);
+    background-size: 100% 100%;
+}
+
+#beach_image{
+    background-image: url(../../assets/images/Beach.jpg);
+    background-size: 100% 100%;
+}
+
+#sunrise_image{
+    background-image: url(../../assets/images/SunRise.jpg);
+    background-size: 100% 100%;
+}
+
+#uparrow_button{
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+#uparrow_button:active{
+    color: red;
+}

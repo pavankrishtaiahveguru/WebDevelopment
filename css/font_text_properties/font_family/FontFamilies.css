@@ -16,7 +16,7 @@
 }
 @font-face{
     font-family: NeueMachina;
-    src: url(../../assets/fonts/NeueMachinaRegular.otf);
+    src: url(../../../assets/fonts/NeueMachinaRegular.otf);
 }
 #machine_learning_heading{
     font-family: NeueMachina;
