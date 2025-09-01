@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+#web_development_list_container{
+    width: 25%;
+    height: 650px;
+    background-color: rgb(245, 245, 245);
+    overflow: auto;
+}
+
+#web_development_list_heading{
+    font-size: 37px;
+    margin-left: 8px;
+    color: purple;
+
+}
+
+#web_development_list{
+    font-size: 25px;
+    color: purple;
+    margin-left: 35px;
+    list-style-type: none;
+    font-weight: bold;
+    
+}
+
+#html_list,#css_list,#javascript_list,#react_js_list{
+    font-size: 20px;
+    margin-left: 45px;
+    color: black;
+    font-weight: normal;
+}
+
+#web_development_list_container:hover::-webkit-scrollbar{
+    width: 12px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+#web_development_list_container::-webkit-scrollbar-thumb{
+    width: 12px;
+    background-color: peachpuff;
+    border-radius: 50px;
+}
+
+#web_development_list_container::-webkit-scrollbar-thumb:hover{
+    background-color: orange;
+}
