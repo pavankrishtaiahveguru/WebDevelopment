@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#red_color_block{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#red_color_block:hover{
+    animation-name: toAnimateRedColorBlockIntoWPattern;
+    animation-timing-function: ease-out;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+
+/* animation logics */
+@keyframes toAnimateRedColorBlockIntoWPattern{
+    /* first frame */
+    0%{
+        transform: translate(0px);  
+    }
+    /* second frame */
+    25%{
+        transform: translateY(770px) scale(0);
+        background-color: yellow; 
+    }
+    /* third frame */
+    50%{
+        transform: translate(385px,385px) scale(3);
+        background-color: darkblue;
+    }
+    /* fourth frame */
+    75%{
+        transform: translate(770px,770px) scale(0);
+        background-color: gray;
+    }
+    /* fifth frame */
+    100%{
+        transform: translate(770px,0px);
+        background-color: orange;
+    }
+}
