@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+body{
+    width: 100%;
+    height: 825px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+#web_development_heading{
+    font-size: 20px;
+    animation-name: toAnimateWebDevelopmentHeading;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* animation-direction: normal; (normal (default value) is animate 'from code ' to 'to code' and flicker) */
+    /* animation-direction: reverse; (reverse is animate 'to code ' to 'from code' and flicker) */
+    /* animation-direction: alternate; (alter is animate 'from code ' to 'to code' ) */
+    /* animation-direction: alternate-reverse; (reverse is animate 'to code ' to 'from code' and flicker) */
+}
+
+/* animation logics */
+@keyframes toAnimateWebDevelopmentHeading{
+    /* first frame */
+    from{
+        transform: translateX(-35%);
+    }
+    /* second frame */
+    to{
+        transform: translateX(25%);
+        font-size: 100px;
+    }
+}

@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansBold.ttf);
+}
+
+body{
+    height: 825px;
+}
+
+#google_doodle_container{
+    height: 130px;
+    font-family: ProductScans;
+    position: absolute;
+    top: 250px;
+    left: 33%;
+}
+
+.google_doodles{
+    font-size: 150px;
+    float: left;
+}
+
+.royalblue_later{
+    color: royalblue;
+}
+
+.red_color_later{
+    color: red;
+}
+
+#uppercase_g_letter{
+    animation-name: toAnimateUppercaseGLater;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#first_o_letter{
+    animation-name: toAnimateFirstOLetterLater;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#second_o_letter{
+    color: orange;
+    animation-name: toAnimateSecondOLetterLater;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#lowercase_g_letter{
+    animation-name: toAnimateLowercaseGLater;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+#l_letter{
+    color: green;
+    animation-name: toAnimateLLetter;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+#e_letter{
+    animation-name: toAnimateELetter;
+    animation-duration: 750ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+/* animation logics */
+@keyframes toAnimateUppercaseGLater{
+    /* first Frame */
+    from{
+        transform: rotateY(360deg);
+    }
+    /* second frame */
+    25%{
+        transform: rotateY(-360deg);
+    }
+    /* second frame */
+    50%{
+        transform: translateY(-100px);
+    }
+    /* third frame */
+    to{
+        transform: translateY(100px);
+    }
+}
+
+@keyframes toAnimateFirstOLetterLater{
+    /* first Frame */
+    from{
+        transform: rotateX(360deg);
+    }
+    /* second frame */
+    25%{
+        transform: rotateX(-360deg);
+    }
+    /* third frame */
+    50%{
+        transform: translateY(-100px);
+    }
+    /* fourth frame */
+    to{
+        transform: translateY(100px) scale(1.5);
+    }
+}
+
+@keyframes toAnimateSecondOLetterLater{
+    /* first Frame */
+    from{
+        transform: translateY(100px);
+    }
+    /* second frame */
+    50%{
+        transform: skew(360deg,360deg);
+    }
+    /* third frame */
+    to{
+        /* transform: translateY(-100px); */
+    }
+}
+
+@keyframes toAnimateLowercaseGLater{
+    /* first frame */
+    from{
+        transform: scale(1.5);
+    }
+    /* second frame */
+    to{
+        transform: scale(.75);
+    }
+}
+
+@keyframes toAnimateLLetter{
+    /* first frame */
+    from{
+        transform: translateY(100px) rotate(-360deg);
+    }
+    /* second frame */
+    to{
+        transform: translateY(-100px) rotate(360deg) scale(1.5);
+    }
+}
+
+@keyframes toAnimateELetter{
+    from{
+        transform: rotateZ(-25deg) scale(1.5);
+    }
+    /* second frame */
+    to{
+        transform: rotateZ(-25deg) scale(0.5);
+    }
+}

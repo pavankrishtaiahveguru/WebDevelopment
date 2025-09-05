@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    height: 825px;
+}
+
+#image_slide_show_heading_container{
+    font-size: 100px;
+    color: magenta;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#image_container{
+    width: 700px;
+    height: 400px;
+    background-image: url(../../../assets/images/MountHimalayas.jpg);
+    background-size: 100% 100%;
+    border-radius: 50px;
+    margin: 70px auto;
+    cursor: pointer;
+}
+
+#image_container:hover{
+    animation-name: toAnimateSlideShowImages;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes toAnimateSlideShowImages {
+    from{
+        background-image: url(../../../assets/images/SunRise.jpg);
+        background-image: 100% 100%;
+    }
+    /* second frame */
+    20%{
+        background-image: url(../../../assets/images/MountFuji.jpg);
+        background-size: 100% 100%;
+    }
+    /* second frame */
+    40%{
+        background-image: url(../../../assets/images/Parachute.jpg);
+        background-size: 100% 100%;
+    }
+    /* second frame */
+    60%{
+        background-image: url(../../../assets/images/Beach.jpg);
+        background-size: 100% 100%;
+    }
+    /* second frame */
+    80%{
+        background-image: url(../../../assets/images/Rainbow.JPG);
+        background-size: 100% 100%;
+    }
+    to{
+        background-image: url(../../../assets/images/CabelBridgeImage.jpg);
+        background-size: 100% 100%;
+    }  
+}
