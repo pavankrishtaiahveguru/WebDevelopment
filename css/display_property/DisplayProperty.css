@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    font-size: 50px;
+}
+
+#heading{
+    width: 50%;
+    color: greenyellow;
+    background-color: gray;
+    display: inline;
+}
+
+#division{
+    width: 75%;
+    color: white;
+    background-color: red;
+    display: inline;
+}
+
+#paragraph{
+    width: 15%;
+    color: orange;
+    background-color: black;
+    display: inline;
+}
+
+#span{
+    width: 50%;
+    color: white;
+    background-color: purple;
+    display: block;
+}
+
+#quote{
+    width: 50%;
+    color: darkblue;
+    background-color: lightgray;
+    display: block;
+}
+
+#bold{
+    width: 75%;
+    background-color: lightblue;
+    display: inline-block;
+}
+
+.buttons{
+    font-size: 45px;
+    margin: 30px 0px 0px 10px;
+    padding: 0.5%;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.images{
+    width: 200px;
+    display: none;
+    margin: 10px 0px 0px 10px;
+}
+
+#display_earth_image:hover~#earth_image{
+    display: inline-block;
+}
+
+#display_sun_image:hover~#sun_image{
+    display: inline-block;
+}

@@ -1,0 +1,202 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+    animation: all 250ms ease-out;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+/* navbar */
+#navbar_list_container{
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+    top: 1vh;
+    right: 0vw;
+
+}
+
+.navbar_list_items{
+    font-size: 2.5em;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar_list_items:hover{
+    text-shadow: 0em 0em 0.5vw black;
+}
+
+/* login hyperlink */
+#login_label{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* mountains container */
+#indian_mountains_container{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightcyan;
+    display: flex;
+    background-image: url(../../assets/images/IndianMountainImage.jpeg);
+}
+
+#left_indian_mountain_container{
+    width: 50vw;
+    height: 100vh;
+    backdrop-filter: blur(0.5vw) brightness(70%);
+}
+
+#right_indian_mountain_container{
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.headings{
+    position: relative;
+}
+
+.up_headings{
+    font-size: 18rem;
+    top: 10vw;
+}
+
+.down_heading{
+    font-size: 11.5rem;
+    bottom: -10vw;
+}
+
+/* buttons */
+#buttons_container{
+    width: 15vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 2.5vw;
+    right: 3vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons{
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 50%;
+    box-shadow: inset 0vw 0vw 1.5vw gray;
+    cursor: pointer;
+    transition: transform 150ms ease-out;
+}
+
+#ind_heading{
+    left: 17vw;
+    color: transparent;
+    background-size: 150%;
+    background-position: 2% 27%;
+}
+
+
+.left_indian_mountain_headings{
+    background-image: url(../../assets/images/IndianMountainImage.jpeg);
+    background-clip: text;
+}
+
+.right_indian_mountain_headings{
+    right: .5vw;
+}
+
+#moun_heading{
+    left: 16.9vw;
+    color: transparent;
+    background-size: 150%;
+    background-position: 0% 80%;
+}
+
+#ntain_heading{
+    right: 4.65vw;
+}
+
+.buttons:hover{
+    transform: rotateZ(360deg) scale(1.2);
+}
+
+#check_box{
+    height: 1.5vw;
+    width: 1.5vw;
+    position:absolute;
+    z-index: 3;
+    right: 1vw;
+    top: 3vh;
+    /* display: none; */
+}
+
+
+/* login form */
+#login_form_container{
+    width: 35vw;
+    height: 43vh;
+    backdrop-filter: blur(1.5vw);
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 33vw;
+    top: 25vh;
+    cursor: pointer;
+    border: 0.15vw solid white;
+    z-index: 10;
+    display: none;
+
+}
+
+#login_heading{
+    color: white;
+    font-size: 5rem;
+}
+
+.input_fields{
+    font-size: 2.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 0.5vh solid white;
+}
+
+#login_button{
+    width: 13vw;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+    padding: 0.5vw 0.5vh;
+    font-weight: bold;
+    border-radius: .7vw;
+}
+
+.input_fields::placeholder{
+    color: white;
+}
+
+#check_box:checked ~ #login_form_container{
+    display: flex;
+}
+

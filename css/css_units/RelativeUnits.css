@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    height: 820px;
+}
+
+/* percentage units */
+#parent_block{
+    width: 25%;
+    height: 25%;
+    background-color: purple;
+    padding: 25px;
+}
+
+#child_block{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+}
+
+/* view port units */
+#parent_container{
+    width: 10vw;
+    height: 10vw;
+    background-color: black;
+}
+
+#child_container{
+    width: 50%;
+    height: 50%;
+    background-color: lightgrey;
+}
+
+/* rem and em units */
+#parent_text_container{
+    width: 20vw;
+    height: 20vw;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#child_text_container{
+    width: 50%;
+    height: 50%;
+    background-color: lightcoral;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

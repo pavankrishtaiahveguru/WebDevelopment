@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+    transition: all 500ms ease-out;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+#mountains_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/LeftBigMountainNight.png),
+                      url(../../assets/images/Moon.png),
+                      url(../../assets/images/LeftSmallMountainNight.png),
+                      url(../.././assets/images/SmallSun.png),
+                      url(../../assets/images/RightSmallMountainNight.png),
+                      url(../../assets/images/RightBigMountainNight.png),
+                      url(../../assets/images/SpaceStars.png);
+    background-repeat: no-repeat;
+    background-size: 45vw,18vw,40vw,25vw,40vw,45vw,100vw;
+    background-position: 0vw 52vh,2vw 2vh,15vw 70vh,33vw 80vh,40vw 70vh,55vw 52vh,center;
+}
+
+#login_form_container{
+    width: 35vw;
+    height: 43vh;
+    backdrop-filter: blur(1.5vw);
+    border-radius: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 33vw;
+    top: 25vh;
+    cursor: pointer;
+    border: 0.15vw solid white;
+    z-index: 2;
+}
+
+#login_heading{
+    color: white;
+    font-size: 5rem;
+}
+
+.input_fields{
+    font-size: 2.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 0.5vh solid white;
+}
+
+#login_button{
+    width: 13vw;
+    font-size: 3rem;
+    outline: none;
+    border: none;
+    padding: 0.5vw 0.5vh;
+    font-weight: bold;
+    border-radius: .7vw;
+}
+
+.input_fields::placeholder{
+    color: white;
+}
+
+#login_form_container:hover>#login_heading{
+    color: black;
+    text-shadow: 0vw 0vw 0.5vw white,0vw 0vw 1vh white,0vw 0vw 1.5vh white;
+}
+
+#login_form_container:hover>.input_fields{
+    text-shadow: 0vw 0vw 0.4vw black,0vw 0vw 0.6vw black,0vw 0vw 0.8vw black;
+}
+
+#login_form_container:hover+#mountains_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/LeftBigMountain.png),
+                      url(../../assets/images/Moon.png),
+                      url(../../assets/images/LeftSmallMountain.png),
+                      url(../.././assets/images/SmallSun.png),
+                      url(../../assets/images/RightSmallMountain.png),
+                      url(../../assets/images/RightBigMountain.png),
+                      url(../../assets/images/Sky.png);
+    background-repeat: no-repeat;
+    background-size: 45vw,10vw,40vw,25vw,40vw,45vw,100vw;
+    background-position: -5vw 52vh,15vw 65vh,20vw 75vh,50vw -10vh,40vw 75vh,60vw 57vh,center;
+}

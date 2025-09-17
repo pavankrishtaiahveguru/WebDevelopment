@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttons{
+    width: 23.5vw;
+    height: 23.5vw;
+    background-color: lightgray;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18rem;
+    margin-top: 1.5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons:hover{
+    color: darkblue;
+
+}
+#earth_image{
+    width: 23.5vw;
+    position: absolute;
+    bottom: 2.5vh;
+}
+
+.buttons:hover~#earth_image{
+    transition: transform 50000ms linear;
+
+}
+
+#x_button:hover~#earth_image{
+    transform: rotateX(360deg);
+}
+
+#y_button:hover~#earth_image{
+    transform: rotateY(360deg);
+}
+
+#z_button:hover~#earth_image{
+    transform: rotateZ(360deg);
+}
