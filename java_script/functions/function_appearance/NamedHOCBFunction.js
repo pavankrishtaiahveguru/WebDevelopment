@@ -1,9 +1,8 @@
-// named Higher Order Function
-// named Callback Function
-function namedHOFunction(anotherFunction){
-
+// named higher order function
+// named callback function
+function namedHigherOrderFunction(anotherFunction) {
+    anotherFunction();
 }
-// call back function
-namedHOFunction(function(){
-    console.log("Named Higher Order Function");
+namedHigherOrderFunction(function (){
+    console.log("NamedCallBackFunction");
 });

@@ -1,9 +1,8 @@
 // anonymous Higher Order Function
 // anonymous Callback Function
-function anonymousHOFunction(anotherFunction){
-    anotherFunction(25);
+let anonymousHigherOrderFunction=function (anotherFunction){
+    anotherFunction();
 }
-// call back function
-anonymousHOFunction(function(number){
-    console.log(number*number)
+anonymousHigherOrderFunction(function (){
+console.loa("AnonymousCallBackFunction.")
 });

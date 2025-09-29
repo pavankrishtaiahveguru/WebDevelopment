@@ -1,9 +1,8 @@
 // arrow Higher Order Function
 // arrow Callback Function
-function arrowHOFunction(anotherFunction){
-    anotherFunction(568);
+let arrowHigherOrderFunction= (anotherFunction) =>{
+    anotherFunction();
 }
-// call back function
-arrowHOFunction((number)=>{
-    console.log(number*number);
+arrowHigherOrderFunction(()=> {
+console.log("ArrowCallBackFunction.");
 });
