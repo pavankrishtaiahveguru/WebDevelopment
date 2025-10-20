@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#explore_button_container{
+    width: 30vw;
+    height: 10vw;
+    font-size: 5rem;
+    font-family: ProductScans;
+    font-weight: bold;
+    background-color: greenyellow;
+    outline: none;
+    border: none;
+    border-radius: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+#compass_container{
+    width: 8.5vw;
+    height: 8.5vw;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1500ms;
+}
+
+#compass_needle_container{
+    width: 4vw;
+    height: 4vw;
+    background-color: greenyellow;
+    transform: skew(36deg);
+    border-radius: 0.1vw;
+}
+
+
+#compass_needle_support{
+    width: 0.75vw;
+    height: 0.75vw;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#explore_button_container:hover>#compass_container{
+    transform: rotateZ(360deg);
+}

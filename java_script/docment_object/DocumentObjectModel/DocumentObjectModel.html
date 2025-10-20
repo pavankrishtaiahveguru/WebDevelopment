@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumentObjectModel</title>
+    <script src="DocumentObjectModel.js" defer></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../../assets/fonts/ProductSansRegular.ttf);
+        }
+        #title_heading{
+            font-size: 5vw;
+            color: white;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+        }
+        #buttons_container{
+            width: 50vw;
+            height: 10vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 2vw;
+        }
+        .buttons{
+            font-size: 3.5em;
+            color: white;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            padding: 1vw;
+            cursor: pointer;
+        }
+        #subscribe_button{
+            background-color: red;
+            border-radius: 3.5vw;
+        }
+        #follow_button{
+            background-color: darkblue;
+            border-radius: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title_heading">DOM</h1>
+    <div id="buttons_container">
+        <button id="subscribe_button" class="buttons">Subscribe</button>
+        <button id="follow_button" class="buttons">Follow</button>
+    </div>
+</body>
+</html>
