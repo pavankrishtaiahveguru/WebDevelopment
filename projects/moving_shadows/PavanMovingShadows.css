@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+}
+
+#text_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pavan_name{
+    font-size: 15em;
+    color: white;
+    animation-name: toAnimatePavanText;
+    animation-duration: 3500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes toAnimatePavanText {
+    from{
+        transform: translate(-10px);
+        /* right */
+        text-shadow: 0px 0px 0px red,
+                 1px 0.2px 1px red,
+                 2px 0.3px 1.5px red,
+                 3px 0.4px 1.5px red,
+                 4px 0.6px 1.5px yellow,
+                 5px 0.7px 1.5px yellow,
+                 6px 0.8px 1.5px green,
+                 7px 0px 1.5px green,
+                 8px 0px 1.5px green,
+                 9px 0px 1.5px blue,
+                 10px 0px 1.5px blue,
+                 11px 0px 1.5px blue,
+                 12px 0px 1.5px magenta,
+                 13px 0px 1.5px magenta,
+                 14px 0px 1.5px magenta;
+    }
+    second
+    25%{
+        transform: translate(10px);
+        /* down */
+        text-shadow: 0px 0px 0px red,
+                     0px 1px 1px red,
+                     0px 2px 1.5px red,
+                     0px 3px 1.5px red,
+                     0px 4px 1.5px yellow,
+                     0px 5px 1.5px yellow,
+                     0px 6px 1.5px green,
+                     0px 7px 1.5px green,
+                     0px 8px 1.5px green,
+                     0px 9px 1.5px blue,
+                     0px 10px 1.5px blue,
+                     0px 11px 1.5px blue,
+                     0px 12px 1.5px magenta,
+                     0px 13px 1.5px magenta,
+                     0px 14px 1.5px magenta;
+    }
+    /* third */
+    50%{
+        transform: translate(-10px);
+        /* up */
+        text-shadow: 0px 0px 0px red,
+                     0px -1px 1px red,
+                     0px -2px 1.5px red,
+                     0px -3px 1.5px red,
+                     0px -4px 1.5px yellow,
+                     0px -5px 1.5px yellow,
+                     0px -6px 1.5px green,
+                     0px -7px 1.5px green,
+                     0px -8px 1.5px green,
+                     0px -9px 1.5px blue,
+                     0px -10px 1.5px blue,
+                     0px -11px 1.5px blue,
+                     0px -12px 1.5px magenta,
+                     0px -13px 1.5px magenta,
+                     0px -14px 1.5px magenta;
+        
+    }
+    /* fourth */
+    75%{
+        transform: translate(10px);
+        text-shadow: 0px 0px 0px red,
+                     0px 1px 1px red,
+                     0px 2px 1.5px red,
+                     0px 3px 1.5px red,
+                     0px 4px 1.5px yellow,
+                     0px 5px 1.5px yellow,
+                     0px 6px 1.5px green,
+                     0px 7px 1.5px green,
+                     0px 8px 1.5px green,
+                     0px 9px 1.5px blue,
+                     0px 10px 1.5px blue,
+                     0px 11px 1.5px blue,
+                     0px 12px 1.5px magenta,
+                     0px 13px 1.5px magenta,
+                     0px 14px 1.5px magenta;
+    }
+    /* fifth */
+    to{
+        transform: translate(-10px);
+        text-shadow: 0px 0px 0px red,
+                 -1px -0.2px 1px red,
+                 -2px -0.3px 1.5px red,
+                 -3px -0.4px 1.5px red,
+                 -4px -0.6px 1.5px yellow,
+                 -5px -0.7px 1.5px yellow,
+                 -6px -0.8px 1.5px green,
+                 -7px -0px 1.5px green,
+                 -8px -0px 1.5px green,
+                 -9px -0px 1.5px blue,
+                 -10px -0px 1.5px blue,
+                 -11px -0px 1.5px blue,
+                 -12px -0px 1.5px magenta,
+                 -13px -0px 1.5px magenta,
+                 -14px -0px 1.5px magenta;
+    }
+}

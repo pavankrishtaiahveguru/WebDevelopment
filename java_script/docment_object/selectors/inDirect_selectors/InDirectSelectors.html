@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InDirectSelectors</title>
+    <script src="InDirectSelectors.js" defer></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            height: 100vh;
+            padding: 2vw;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #cource_headings{
+            font-size: 1.5vw;
+            background-color: lightgrey;
+        }
+        .buttons{
+            font-size: 3vw;
+            font-weight: bold;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 1vw;
+        }
+        #subscribe_button{
+            background-color: red;
+            border-radius: 5vw;
+        }#follow_button{
+            background-color: royalblue ;
+            border-radius: 1vw;
+        }
+        #gender_buttons_container{
+            font-size: 2vw;
+            color: white;
+            background-color: purple;
+            padding:1vw ;
+            border-radius: 1vw;
+        }
+        input[type=radio]{
+            width: 1.5vw;
+            height:1.5vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="cource_headings">
+        <h1 class="headings">Java</h1>
+        <h1 class="headings">Python</h1>
+        <h1 class="headings">Web</h1>
+        <h1 class="headings">SQL</h1>
+    </div>
+    <div id="buttons_container">
+        <button type="submit" class="buttons" id="subscribe_button">Subscribe</button>
+        <button type="submit" class="buttons" id="follow_button">Follow</button>
+    </div>
+    <div id="gender_buttons_container">
+        <h1 id="gender_heading"></h1>
+        <input type="radio" name="Gender" id="male_gender_button"> <label for="">Male</label>
+        <input type="radio" name="Gender" id="female_gender_button"> <label for="">Female</label>
+        <input type="radio" name="Gender" id="trangender_gender_button"> <label for="">Trangender</label>
+        <input type="radio" name="Gender" id="others_gender_button"> <label for="">Others</label>
+    </div>
+</body>
+</html>
