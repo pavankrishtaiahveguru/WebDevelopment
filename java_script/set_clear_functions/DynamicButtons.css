@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face{
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+
+body{
+    padding: 10px;
+}
+
+#buttons_container{
+    width: 50vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons{
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: transform 500ms;
+}
+
+.buttons:active{
+    transform: scale(0.65);
+}
+
+#subscribe_button{
+    background-color: red;
+    border-radius: 50px;
+}
+
+#follow_button{
+    background-color: royalblue;
+    border-radius: 15px;
+}
+
+#copy_button{
+    background-color: royalblue;
+    border-radius: 7px;
+}
+
+#list_arrow{
+    width: 3px;
+    height: 3px;
+}
+
+#angle_down{
+    font-size: 3vw;
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+#subscribe_dropdown{
+    font-size: 1.5vw;
+    background-color: transparent;
+    position: absolute;
+    left: 80px;
+    top: 260px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: space-evenly;
+    /* display: none; */
+}
+
+#list_items{
+    font-size: 10vw;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+#list_items:active{
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    padding: 1px;
+}
+
+#ball_container{
+    width: 10vw;
+    height: 10vw;
+    background-color: lightgray;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px gray,inset 0px 0px 20px gray,inset 0px 0px 30px gray,inset 0px 0px 40px gray,inset 0px 0px 50px gray;
+    transition: transform 500ms ease;
+}
+
+#buttons_container{
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    left: 40vw;
+    top: 45vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons{
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 250ms;
+}
+
+#start_button{
+    background-color: green;
+}
+#stop_button{
+    background-color: red;
+}
+.buttons:active{
+    transform: scale(0.75);
+}

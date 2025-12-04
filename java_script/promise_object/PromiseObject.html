@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromiseObject</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            padding: 20px;
+        }
+        #fetch_user_data_container{
+            margin-bottom: 10px;
+        }
+        .buttons{
+            font-size: 3vw;
+            font-weight: bold;
+            background-color: lightgray;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            box-shadow: inset 0px 0px 10px gray;
+            padding: 5px 10px;
+            transition: transform 500ms;
+            cursor: pointer;
+        }
+        .buttons:active{
+            transform: scale(0.75);
+        }.promiseObject_result{
+            padding-left: 5px;
+        }
+    </style>
+    <script src="PromiseObject.js" defer></script>
+</head>
+<body>
+    <div id="fetch_user_data_container">
+        <button id="fetch_user_data_button" class="buttons">Fetch User Data</button>
+        <h1 id="fetch_user_data_output" class="promiseObject_result"></h1>
+    </div>
+    <div id="fetch_user_data_container">
+        <button id="place_order_button" class="buttons">Place Order</button>
+        <h1 id="place_order_data_output" class="promiseObject_result"></h1>
+    </div>
+</body>
+</html>

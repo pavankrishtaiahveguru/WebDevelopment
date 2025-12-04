@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClick</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        #buttons_container{
+            width: 35vw;
+            height: 35vh;
+            background-color: lightgray;
+            margin-left: -4vw;
+            margin-top: -4vw;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-left: 50px;
+        }
+        .buttons{
+            font-size: 2.5vw;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            border-radius: 15fpx;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            transition: transform 500ms ease;
+        }
+        .buttons:active{
+            transform: scale(.75);
+        }
+        #red_button{
+            background-color: red;
+        }
+        #green_button{
+            background-color: green;
+        }
+        #darkblue_button{
+            background-color: darkblue;
+        }
+    </style>
+    <script src="OnClick.js"></script>
+</head>
+<body>
+    <div id="buttons_container">
+        <button class="buttons" id="red_button" onclick="changeBodyColorToRed()">Red</button>
+        <button class="buttons" id="green_button" onclick="changeBodyColorToGreen()">Green</button>
+        <button class="buttons" id="darkblue_button" onclick="changeBodyColorToRoyalBlue()">DarkBlue</button>
+    </div>
+</body>
+</html>

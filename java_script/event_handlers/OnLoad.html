@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnLoadEventHandler</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            padding: 10px;
+        }
+        #web_development_heading{
+            font-size: 5vw;
+            text-align: center;
+            position: relative;
+            left: -70vw;
+            transition: left 500ms;
+        }
+    </style>
+    <script src="OnClick.js" defer></script>
+</head>
+<body onload="loadWebHeading()">
+    <h1 id="web_development_heading">WebDevelopment</h1>
+</body>
+</html>

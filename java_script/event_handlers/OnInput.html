@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnInputEventHandler</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }body{
+            padding: 20px;
+        }
+        #password_input{
+            font-size: 2.5vw;
+            background-color: lightgray;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding:3px 10px;
+        }
+    </style>
+    <script src="OnInput.js" defer></script>
+</head>
+<body>
+    <input type="password" name="Password" id="password_input" oninput="validatePasswordLength()"> 
+    <br>
+    <span id="error_statement"></span>
+</body>
+</html>

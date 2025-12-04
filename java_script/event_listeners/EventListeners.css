@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#buttons_container{
+    width: 45vw;
+    height: 45vh;
+    background-color: lightgrey;
+    border-radius: 50%;
+    position: relative;
+    left: -10%;
+    top: -12%;
+}
+
+.color_buttons{
+    font-size: 3vw;
+    color: white;
+    font-size: bold;
+    position: relative;
+    top: 42%;
+    left: 30%;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#red_color_button{
+    background-color: red;
+}
+
+#green_color_button{
+    background-color: green;
+}
+
+#darkblue_color_button{
+    background-color: darkblue;
+}

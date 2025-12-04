@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#show_image_container{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 5vw;
+    background-image: radial-gradient(circle at top,black,white,red);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#nike_airmax_shoe{
+    width: 20vw;
+    position: relative;
+    top: 3vh;
+    transition: transform 1500ms linear;
+}
+
+#show_image_container:hover>#nike_airmax_shoe{
+    transform: scale(1.6) rotate(-90deg) translate(5vh,-0vw);
+    left: -11.5vw;
+}
+#text_container{
+    width: 2.5vw;
+    color: transparent;
+    font-size: 0.2em;
+    position: relative;
+    top: -20vh;
+    left: 11vw;
+}
+
+#show_image_container:hover>#text_container{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: scale(4);
+    transition: all 5s;
+}
+
+#text_description{
+    font-size: 0.3rem;
+}

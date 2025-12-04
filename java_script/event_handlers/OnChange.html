@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChangeEventHandler</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductScans;
+        }
+        @font-face {
+            font-family: ProductScans;
+            src: url(../../assets/fonts/ProductSansRegular.ttf);
+        }
+        body{
+            padding: 15px;
+        }
+        #color_field_container{
+            text-align: center;
+        }
+        #color_input_box{
+            font-size: 3vw;
+            border: none;
+            background-color: lightgray;
+            border-radius: 10px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+        }
+        #color_text_content{
+            font-size: 3.5vw;
+            color: white;
+        }
+    </style>
+    <script src="OnChange.js" defer></script>
+</head>
+<body>
+    <div id="color_field_container">
+        <input type="text" name="Color" id="color_input_box" onchange="changeBodyColor()">
+        <br>
+        <span id="color_text_content"></span>
+    </div>
+</body>
+</html>

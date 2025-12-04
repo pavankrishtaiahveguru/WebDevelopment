@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0pxx;
+    box-sizing: border-box;
+    font-family: ProductScans;
+}
+@font-face {
+    font-family: ProductScans;
+    src: url(../../assets/fonts/ProductSansRegular.ttf);
+}
+body{
+    height: 100vh;
+    padding: 10px;
+}
+
+#kurkure_image_quantity_container{
+    width: 15vw;
+    height: 40vh;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+#kurkure_image_container{
+    width: 100%;
+    height: 85%;
+    background-color: orange;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url(../../assets/images/Kurkure.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#kurkure_quantity_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.quantity_button_tools{
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
