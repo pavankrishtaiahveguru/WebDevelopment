@@ -17,10 +17,10 @@ let courseName="JavaScriptJ";
 console.log(`The length of ${courseName} : ${toGetLength(courseName)}`);
 
 // indexOf(searchString):index
-// indexOf(searchString,fromIndex):index
+// indexOf(searchString,fromIndex):index || firstIdentifiedElementIndex(forward)
 console.log(courseName.indexOf("J",5));
 // lastIndexOf(searchString):lastIndex
-// lastIndexOf(searchString,fromIndex):lastIndex
+// lastIndexOf(searchString,fromIndex):lastIndex || firstIdentifiedElementndex(backward)
 console.log(courseName.lastIndexOf("J"));
 
 // slice(startIndex,endIndex):substring

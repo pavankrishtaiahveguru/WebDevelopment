@@ -4,5 +4,5 @@ let anonymousHigherOrderFunction=function (anotherFunction){
     anotherFunction();
 }
 anonymousHigherOrderFunction(function (){
-console.loa("AnonymousCallBackFunction.")
+console.log("AnonymousCallBackFunction.")
 });

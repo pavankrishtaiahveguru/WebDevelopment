@@ -1,0 +1,15 @@
+[
+    {
+        "userName":"Pavan",
+        "password":"pavan123",
+        "email":"pavan123@gmail.com"
+    },{
+        "userName":"Naseer",
+        "password":"naseer123",
+        "email":"naseer7@gmail.com"
+    },{
+        "userName":"Praveen",
+        "password":"praveen123",
+        "email":"praveen18@gmail.com"
+    }
+]
